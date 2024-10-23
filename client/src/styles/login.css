@@ -1,0 +1,192 @@
+/* Container Styles */
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    border-radius: 10px;
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    transition: background-color 0.3s ease;
+    padding: 2rem;
+}
+
+/* Form Styles */
+.login-form {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.login-form label {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.login-form input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Button Styles */
+.login-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.login-form button:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-3px);
+}
+
+/* Password Container Styles */
+.password-container {
+    position: relative;
+}
+
+/* Toggle Password Styles */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0;
+}
+
+/* Adjust input field padding to account for the icon */
+.password-container input {
+    padding-right: 40px;
+}
+
+/* Additional Text Styles */
+.additional-text {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.additional-text a {
+    color: var(--hover-text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.additional-text a:hover {
+    color: var(--hover-color);
+}
+
+/* Container Styles */
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    border-radius: 10px;
+    background: #f5f5f5; /* Light beige background to evoke warmth */
+    transition: background-color 0.3s ease;
+    padding: 2rem;
+}
+
+/* Form Styles */
+.login-form {
+    background: #fff; /* White form background for contrast */
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Button Styles */
+.login-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c4f3d; /* Warm brown color */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.login-form button:hover {
+    background-color: #8a6d5b; /* Slightly lighter brown on hover */
+    transform: translateY(-3px);
+}
+
+/* Additional Text Styles */
+.additional-text {
+    text-align: center;
+    margin-top: 1rem;
+    color: #6c4f3d; /* Warm brown color */
+    font-size: 0.9rem;
+}
+
+.additional-text a {
+    color: #8a6d5b; /* Slightly lighter brown for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.additional-text a:hover {
+    color: #6c4f3d; /* Darker brown on hover */
+}
+

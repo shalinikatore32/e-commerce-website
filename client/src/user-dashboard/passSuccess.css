@@ -1,0 +1,40 @@
+.password-change-success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #e7f9e9;
+    border: 1px solid #c7e6c9;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .success-icon {
+    color: #4CAF50; /* Success green color */
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  button{
+    padding: 10px;
+    background-color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+    color: aliceblue;
+
+  }
+  
+  .password-change-success-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .password-change-success-container p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

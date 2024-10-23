@@ -1,0 +1,77 @@
+/* General Styles */
+.user-data-container {
+  padding: 20px;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto; /* Add horizontal scrollbar */
+}
+
+.user-table {
+  
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  min-width: 600px; /* Ensure minimum width to trigger horizontal scrolling */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.user-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 15px;
+}
+
+.user-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.user-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.user-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.edit-button, .delete-button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  text-decoration: none;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.done-icon{
+  color: #009879;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: center;
+ 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .user-table {
+    min-width: 600px; /* Ensure the table retains its minimum width on small screens */
+  }
+}

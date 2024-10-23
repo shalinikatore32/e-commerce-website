@@ -1,0 +1,40 @@
+/* OrderPlaced.css */
+.order-placed-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.order-placed-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.order-placed-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-placed-container li {
+    background: #fff;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-placed-container li span {
+    font-weight: bold;
+}
+
+.no-orders {
+    text-align: center;
+    color: #888;
+}

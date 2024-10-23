@@ -1,0 +1,161 @@
+/* CSS Variables for Colors */
+:root {
+  --primary-color: #4a2c77; /* Deep Purple */
+  --hover-color: #6c2d91; /* Lighter Purple */
+  --text-color: #FFFFFF; /* White */
+  --hover-text-color: #ffcc00; /* Gold */
+  --gradient-start: #3a1a6f; /* Darker Purple */
+  --gradient-end: #4a2c77; /* Deep Purple */
+  --dropdown-bg-color: #ffffff; /* White */
+  --dropdown-hover-bg-color: #f9f9f9; /* Light Gray */
+}
+
+/* Container Styles */
+.container {
+  margin: 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+  border-bottom: 3px solid var(--hover-text-color);
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+/* Hover Effect for Container */
+.container:hover {
+  background-color: var(--hover-color);
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--dropdown-bg-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: #000;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.user-icon:hover .dropdown-menu,
+.user-icon:focus .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 12px 20px;
+}
+
+.dropdown-menu li:hover {
+  background-color: var(--dropdown-hover-bg-color);
+}
+
+.user-navlink {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 10px;
+}
+
+/* Logo Styles */
+.logo-image {
+  width: 120px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Nav Link Styles */
+.navlink {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s;
+  position: relative;
+}
+
+.navlink:hover {
+  color: var(--hover-text-color);
+}
+
+.navlink::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--hover-text-color);
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+}
+
+.navlink:hover::after {
+  width: 100%;
+}
+
+/* List Styles */
+li {
+  list-style: none;
+}
+
+/* Toggle Button Styles */
+.user-toggle-button {
+  display: none;
+  font-size: 24px;
+  color: var(--text-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.user-toggle-button:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-color);
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .user-toggle-button {
+    display: block;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

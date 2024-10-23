@@ -1,0 +1,106 @@
+/* Container Styles */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    padding: 2rem;
+}
+
+/* Form Styles */
+.registration-form {
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.registration-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+    font-size: 1.8rem;
+}
+
+.registration-form label {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #495057;
+    display: flex;
+    align-items: center;
+}
+
+.registration-form input {
+    margin-top: 5px;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.registration-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Icon Styles */
+.input-icon {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+/* Button Styles */
+.registration-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.registration-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Additional Text Styles */
+.additional-text {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+.additional-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.additional-text a:hover {
+    color: #0056b3;
+}
+

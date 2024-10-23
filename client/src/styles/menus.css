@@ -1,0 +1,109 @@
+.menu-book-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.search-bar{
+    padding: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+    border: #45a049 1px solid;
+}
+
+.menu-book-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section h2 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   text-decoration: #333 1rem solid;
+}
+
+.menu-section ul li button {
+    background-color: #2e2929;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.menu-section ul li button:hover {
+    background-color: #363333;
+}
+
+.order-summary {
+    margin-top: 30px;
+}
+
+.order-summary h2 {
+    color: #363435;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.order-summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-summary ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .menu-book-container {
+        padding: 10px;
+    }
+
+    .menu-section ul li {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-section ul li button {
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .order-summary ul li {
+        font-size: 16px;
+    }
+}

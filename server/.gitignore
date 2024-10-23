@@ -1,0 +1,13 @@
+
+*.tmp
+.DS_Store
+
+node_modules/
+
+.env
+
+logs/
+*.log
+
+dist/
+build/
